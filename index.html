@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up!</title>
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="styles/styles.css"/>
+    <script type = "text/javascript" src = "js/script.js" defer></script>
 </head>
 <body>
     <div id="left-panel">
@@ -32,7 +33,7 @@
             </h2>
         </div>
         <fieldset>
-            <form action="" method="post">
+            <form action="" method="post" id="myForm">
                 <div class="container">
                     <h2>Let's do this!</h2>
                     <div class="columns">
@@ -41,22 +42,22 @@
                                 <li>
                                     <label for="FirstName"> FIRST NAME</label>
                                     <br>
-                                    <input type="text" id="FirstName" class="txt-input">
+                                    <input type="text" name="FirstName" id="FirstName" class="txt-input" tabindex="1">
                                 </li>
                             </ul>
                             <ul>
                                 <li>
                                     <label for="email">EMAIL</label>
                                     <br>
-                                    <input type="email" id="email" class="txt-input">
+                                    <input type="email" name="email" id="email" class="txt-input" tabindex="3">
                                 </li>
                             </ul>
                             <ul>
                                 <li>
                                     <label for="password">PASSWORD</label>
                                     <br>
-                                    <input type="text" id="password" class="txt-input" required>
-                                    
+                                    <input type="password" name="password" id="password" class="txt-input" required minlength="8" tabindex="5">
+                                    <p id="validation">*Passwords do not match</p>
                                 </li>
                             </ul>
                         </div>
@@ -65,14 +66,14 @@
                                 <li>
                                     <label for="LastName">LAST NAME</label>
                                     <br>
-                                    <input type="text" id="LastName" class="txt-input">
+                                    <input type="text" name="LastName" id="LastName" class="txt-input" tabindex="2">
                                 </li>
                             </ul>
                             <ul>
                                 <li>
                                     <label for="Phone" type="number">PHONE NUMBER</label>
                                     <br>
-                                    <input type="text" id="Phone" class="txt-input">
+                                    <input type="text" name="PhoneNum" id="Phone" class="txt-input" length="10" tabindex="4" pattern="[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]">
                                     
                                 </li>
                             </ul>
@@ -80,14 +81,14 @@
                                 <li>
                                     <label for="confirm-password">CONFIRM PASSWORD</label>
                                     <br>
-                                    <input type="text" id="confirm-password" class="txt-input" required>
+                                    <input type="password" name="confirm-password" id="confirm-password" class="txt-input" required minlength="8" tabindex="6">
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div id="signup-section">
-                    <button type="submit"> Create Account </button>
+                    <button type="submit" id="btnSubmit"> Create Account </button>
                     <p>
                         Already have an account? <a href="index.html">Log in</a></div>   
                     </p>

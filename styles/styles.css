@@ -6,11 +6,12 @@
 }
 
 :root{
---background-img : url('images/forest.jpg');
+--background-img : url('../images/forest.jpg');
 --viewport-width: 600.6px;
 --column-padding:10px;
 --form-title-padding:30px;
 --generic-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+--error-color: red;
 }
 
 body, html{
@@ -50,9 +51,12 @@ body, html{
     font-size: 150px;
 }
 
+
 #div-img-odin{
     max-height: 200px;
 }
+
+
 
 #div-img-odin img{
     height:200px;
@@ -78,18 +82,33 @@ body, html{
 
 #credits{
     font-family: 'Roboto',Verdana;
-    margin-top: 100%;
+    margin-top: 90%;
     color:white;
     text-align: Center;
     font-size: 12px;
 }
 
 .txt-input{
-    border:1px solid #c8c9cc;
+    border:2px solid #c8c9cc;
     font-family: 'Roboto', Verdana;
     font-size: large;
     padding:2px;
+    border-radius: 4px;
 
+}
+
+.txt-input:focus{
+    border-color: rgb(129, 197, 241);
+    box-shadow: var(--generic-shadow);
+    outline: 2px;
+    border-radius: 5px;
+}
+
+input:invalid{
+    border-color: var(--error-color);
+    box-shadow: var(--generic-shadow);
+    outline: 2px;
+    border-radius: 5px;
 }
 
 fieldset{
@@ -142,6 +161,10 @@ button{
     box-shadow: var(--generic-shadow);
 }
 
+.hidden{
+    visibility: hidden;
+}
+
 #signup-section{
     width:30%;
     height:200px;
@@ -150,11 +173,17 @@ button{
 }
 
 #signup-section p{
-    font-weight: bold;
+    font-weight: 400;
     font-family: 'Roboto',Verdana;
     font-size: medium;
 }
 
 li{
     list-style: none;
+}
+
+li p{
+    font-size:12px;
+    font-family:'Roboto', Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--error-color);
 }
