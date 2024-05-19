@@ -10,49 +10,87 @@
     <div id="left-panel">
         <div id="left-panel-container">
             <div id="div-img-odin">
-                <img src="odin-lined.png">
+                <img src="images/odin-lined.png">
             </div>
             <div>ODIN</div>
         </div>
-        
+        <div id="credits">
+            Photo by Federico Bottos on Unsplash
+        </div>
     </div>
-    <div>
-        <h1>
-            This is not a real online service! Its just a project I made for the odin project course!
-
-            Sign up!
-        </h1>
+    <div id="right-panel">
+        <div id="header-text">
+            <h2>
+                This is not a real online service! Its just a project I made for the odin project course! You sometimes need wild things
+                to happen in your life to help you realize your deepest dreams. 
+                <br>
+                <br>
+                Sign up <em>now</em>!
+                <br>
+                <br>
+                You <em>know</em> what to do next.
+            </h2>
+        </div>
         <fieldset>
-            <legend> Sign up.</legend>
-            <form action="">
-                <div>
-                    <ul>
-                        <li><label for=""></label>
-                            <input type="text"></li>
-                    </ul>
-                    <ul>
-                        <li><label for=""></label>
-                            <input type="text"></li>
-                    </ul>
-                    <ul>
-                        <li><label for=""></label>
-                            <input type="text"></li>
-                    </ul>
+            <form action="" method="post">
+                <div class="container">
+                    <h2>Let's do this!</h2>
+                    <div class="columns">
+                        <div class="form-column">
+                            <ul>
+                                <li>
+                                    <label for="FirstName"> FIRST NAME</label>
+                                    <br>
+                                    <input type="text" id="FirstName" class="txt-input">
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <label for="email">EMAIL</label>
+                                    <br>
+                                    <input type="email" id="email" class="txt-input">
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <label for="password">PASSWORD</label>
+                                    <br>
+                                    <input type="text" id="password" class="txt-input" required>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="form-column">
+                            <ul>
+                                <li>
+                                    <label for="LastName">LAST NAME</label>
+                                    <br>
+                                    <input type="text" id="LastName" class="txt-input">
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <label for="Phone" type="number">PHONE NUMBER</label>
+                                    <br>
+                                    <input type="text" id="Phone" class="txt-input">
+                                    
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <label for="confirm-password">CONFIRM PASSWORD</label>
+                                    <br>
+                                    <input type="text" id="confirm-password" class="txt-input" required>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <ul>
-                        <li><label for=""></label>
-                            <input type="text"></li>
-                    </ul>
-                    <ul>
-                        <li><label for=""></label>
-                            <input type="text"></li>
-                    </ul>
-                    <ul>
-                        <li><label for=""></label>
-                            <input type="text"></li>
-                    </ul>
-                </div>
+                <div id="signup-section">
+                    <button type="submit"> Create Account </button>
+                    <p>
+                        Already have an account? <a href="index.html">Log in</a></div>   
+                    </p>
             </form>
         </fieldset>
     </div>

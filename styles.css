@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 @font-face {
     font-family: 'Norse-Bold';
@@ -6,16 +6,22 @@
 }
 
 :root{
---background-img : url('forest.jpg');
+--background-img : url('images/forest.jpg');
 --viewport-width: 600.6px;
+--column-padding:10px;
+--form-title-padding:30px;
+--generic-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-body{
+body, html{
     display:flex;
-    height: 100vh;
-    width: 100%;
+    justify-content: center;
+    height: 100%;
     margin: 0;
     padding: 0;
+    background-color: black;
+    overflow: hidden;
+    overflow-x:hidden;
 }
 
 #left-panel{
@@ -26,6 +32,7 @@ body{
     background-size:cover;
     background-position: center;
     height: auto;
+    justify-content: center;
 }
 
 #left-panel-container{
@@ -49,4 +56,105 @@ body{
 
 #div-img-odin img{
     height:200px;
+}
+
+#right-panel{
+    background-color: #f5f5f5;
+    display:flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+#right-panel h2{
+    max-width: 800px;
+    font-family: 'Roboto',Verdana;
+    font-weight: bold;
+}
+
+#header-text{
+    margin: 10px;
+    margin-left: 30px;
+}
+
+#credits{
+    font-family: 'Roboto',Verdana;
+    margin-top: 100%;
+    color:white;
+    text-align: Center;
+    font-size: 12px;
+}
+
+.txt-input{
+    border:1px solid #c8c9cc;
+    font-family: 'Roboto', Verdana;
+    font-size: large;
+    padding:2px;
+
+}
+
+fieldset{
+    border: 0px;
+    margin: 0;
+    padding:0;
+}
+
+.container{
+    background-color: white;
+    box-shadow: var(--generic-shadow);
+    display:flex;
+    flex-direction: column;
+}
+
+.columns{
+    display:flex;
+}
+
+form h2{
+    padding-left:var(--form-title-padding);
+    padding-top:10px;
+}
+
+.form-column{
+    padding-left:var(--column-padding);
+}
+
+label{
+    font-family: 'Roboto', Verdana;
+    font-weight: bold;
+    color:rgb(41, 41, 41);
+    font-size: small;
+    letter-spacing: 2px;
+    
+}
+
+button{
+    padding-left:(column-padding);
+    background-color:#596D48;
+    font-family: 'Roboto', Verdana;
+    font-size: large;
+    font-weight: bolder;
+    width:230px;
+    height:40px;
+    color:#ffff;
+    text-align: center;
+    border: 0px;
+    border-radius: 5px;
+    box-shadow: var(--generic-shadow);
+}
+
+#signup-section{
+    width:30%;
+    height:200px;
+    margin-top:50px;
+    margin-left: 45px;
+}
+
+#signup-section p{
+    font-weight: bold;
+    font-family: 'Roboto',Verdana;
+    font-size: medium;
+}
+
+li{
+    list-style: none;
 }
