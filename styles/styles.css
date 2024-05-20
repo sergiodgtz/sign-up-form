@@ -21,7 +21,7 @@ body, html{
     margin: 0;
     padding: 0;
     background-color: black;
-    overflow: hidden;
+    overflow:scroll;
     overflow-x:hidden;
 }
 
@@ -82,10 +82,11 @@ body, html{
 
 #credits{
     font-family: 'Roboto',Verdana;
-    margin-top: 90%;
+    margin-top: 80%;
     color:white;
     text-align: Center;
     font-size: 12px;
+    background-color: rgba(0,0,0,0);
 }
 
 .txt-input{
